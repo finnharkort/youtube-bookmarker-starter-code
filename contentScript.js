@@ -13,10 +13,6 @@
     const newVideoLoaded = async () => {
         const bookmarkBtnExists =
             document.getElementsByClassName("bookmark-btn")[0];
-
-        if (bookmarkBtnExists) {
-            console.log("hejhejhejhejhej");
-        }
         if (!bookmarkBtnExists) {
             const bookmarkBtn = document.createElement("img");
             console.log("HALLÅ");
@@ -26,7 +22,7 @@
             bookmarkBtn.title = "Click to bookmark current timestamp";
 
             youtubeLeftControls =
-                document.getElementsByClassName("utp-left-controls")[0];
+                document.getElementsByClassName("ytp-left-controls")[0];
             youtubePlayer = document.getElementsByClassName("video-stream")[0];
 
             youtubeLeftControls.appendChild(bookmarkBtn);
